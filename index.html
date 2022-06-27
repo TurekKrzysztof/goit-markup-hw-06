@@ -398,7 +398,7 @@
     </div>
     </footer>
 
-    <div class="backdrop is-hidden" data-modal>
+    <div class="backdrop " data-modal>
         <div class="modal fadeInFromRight">
             <button type="button" class="close-btn" data-modal-close>
                 <svg class="close-btn-svg">
@@ -407,12 +407,33 @@
             </button>  
             <h4 class="form-title">Zostaw swoje dane w formularzu poniżej</h4>
                 <form class="modal-form" name="signup_form">
-                    <label class="email-modal-form">
-                        <input type="email" name="email" class="email-input" required/>
+                    <label>
+                        <p>Imię</p>
+                        <svg class="modal-form-svg" width="12" height="12">
+                            <use href="./images/icons.svg#icon-person"></use>
+                        </svg>
+                        <input type="text" name="username" required class="modal-form-input">
+
+                    </label>
+                    <label>
+                        <p>Telefon</p>
+                        <input type="tel" name="phone_number" required/>
+                    </label>
+                    <label>
+                         <p>Email</p>
+                        <input type="email" name="email" required />
+                    </label>
+                    <label class="textarea">
+                        <p>Komentarz</p>
+                        <textarea name="feedback" rows="5" placeholder="Wprowadź tekst" resize:none></textarea>
                     </label>
                     <button type="submit" class="submit">
                         <p class="send">Wyślij</p>
                     </button>
+                    <label class="agreement">
+                        <input type="checkbox" name="agreement">
+                        <p class="agreement-text">Oświadczam iż akceptuję</p>
+                    </label>
                 </form>
         </div>
     </div>

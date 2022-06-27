@@ -778,6 +778,8 @@ footer > .container {
     height: 18px;
 }
 
+/*MODAL FORM STYLE*/
+
 .form-title {
     font-weight: 700;
     font-size: 20px;
@@ -788,6 +790,30 @@ footer > .container {
     color: #212121;
 }
 
+.modal-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.modal-form > label > input {
+    width: 448px;
+    height: 40px;
+    
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+}
+
+.modal-form > label > p {
+    padding-top: 10px;
+    padding-bottom: 4px;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 0.01em;
+    color: #757575;
+}
 
 .send {
     font-weight: 700;
@@ -795,4 +821,39 @@ footer > .container {
     line-height: 1.88;
     letter-spacing: 0.06em;
     color: #FFFFFF;
+}
+
+.textarea {
+    
+}
+
+textarea {
+    resize: none;
+    width: 448px;
+    height: 120px;
+
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+}
+
+.agreement {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.agreement-text {
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.03em;
+    color: #757575;
+}
+
+.modal-form-input {
+}
+
+.modal-form-svg {
+    position: absolute;
+    top: 107px;
+    left: 55px;
 }
