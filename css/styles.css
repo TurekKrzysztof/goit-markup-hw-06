@@ -823,37 +823,122 @@ footer > .container {
     color: #FFFFFF;
 }
 
-.textarea {
-    
+.submit {
+    margin-top: 30px;
 }
 
 textarea {
     resize: none;
     width: 448px;
     height: 120px;
-
+    padding: 12px 16px;
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 0.01em;
 }
 
-.agreement {
+textarea::placeholder {
+    color: rgba(117, 117, 117, 0.5);
+}
+
+.modal-form-policy {
     display: flex;
-    flex-direction: row;
     justify-content: center;
-}
-
-.agreement-text {
-    font-size: 14px;
-    line-height: 24px;
-    letter-spacing: 0.03em;
-    color: #757575;
+    align-items: center;
 }
 
 .modal-form-input {
+    padding-left: 42px;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
 }
 
-.modal-form-svg {
+.modal-form label > svg {
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-form-svg-person {
     position: absolute;
-    top: 107px;
-    left: 55px;
+    top: 104px;
+    left: 52px;
+}
+
+.modal-form-svg-phone {
+    position: absolute;
+    top: 171.26px;
+    left: 51.77px;
+}
+
+.modal-form-svg-email {
+    position: absolute;
+    top: 240px;
+    left: 50.5px;
+}
+
+.modal-form-input:focus,
+textarea:focus {
+    border-color: #2196F3;
+    outline: none;
+}
+
+.modal-form > label:focus-within svg {
+    fill: #2196F3;
+}
+
+.modal-form-policy-text {
+    font-size: 14px;
+    line-height: 24px;    
+    letter-spacing: 0.03em;
+    color: #757575;
+    margin-top: 20px;
+}
+
+.modal-form-policy-text::before {
+    display: inline-block;
+    content: "";
+    width: 16px; 
+    height: 16px;
+    border: 2px solid #000;
+    border-radius: 2px;
+    margin-right: 7px;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-form-policy:checked + .modal-form-policy-text::before {
+    background-color: #2196f3;
+    border: none;
+    background-image: url(../images/Vector.svg);
+    background-repeat: no-repeat;
+    background-size: 16px 15px;
+}
+
+.visually-hidden {
+    position: absolute !important;
+    clip: rect(1px 1px 1px 1px);
+    clip: rect(1px, 1px, 1px, 1px);
+    padding: 0 !important;
+    border: 0 !important;
+    height: 1px !important;
+    width: 1px !important;
+    overflow: hidden;
+}
+
+.modal-form-link {
+    color: #2196F3;
+}
+
+.policy-button {
+    width: 200px;
+    height: 50px;
+    border: none;
+    background: #2196F3;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 30px;
 }
