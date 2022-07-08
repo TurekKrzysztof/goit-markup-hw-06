@@ -23,8 +23,10 @@ body {
     width: 1200px;
     margin: 0 auto;
 }
+  
+/* HEADER SECTION */
 
-.menu {
+.header {
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
@@ -64,35 +66,35 @@ header > .container {
     padding-right: 93px;
 }
 
-.links {
+.menu {
     display: flex;
     flex-direction: row;
 
     padding-left: 0px;
     padding-right: 275px;
 }
-.link,
+.menu__link,
 .contact {
     text-decoration: none;
 }
 
-.link {
+.menu__link {
     color: var(--link-color);
 
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-li > .link {
+li > .menu__link {
     margin-right: 46px;
 }
 
-.link:hover,
-.link:focus {
+.menu__link:hover,
+.menu__link:focus {
     color: var(--link-hover);
 }
 
-.agencja-link::after {
+.menu__link--active::after {
     content:"";
     display: block;
     position: absolute;
@@ -167,7 +169,7 @@ li > .link {
     align-items: center;
 }
 
-.headline {
+.container__headline {
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
@@ -178,7 +180,7 @@ li > .link {
     padding-bottom: 30px;
 }
 
-.button1 {
+.container__button1 {
     font-family: 'Roboto', 'sans-serif';
     font-style: normal;
     font-weight: 700;
@@ -257,14 +259,14 @@ li > .link {
     padding-bottom: 0px;
 }
 
-.lorem-list {
+.lorem__list {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
 }
 
-.lorem-pictures_link {
+.lorem__link {
     display: flex;
     width: 270px;
     height: 120px;
@@ -274,11 +276,11 @@ li > .link {
     background-color: #F5F4FA;;
 }
 
-.lorem-picture {
+.lorem__picture {
     width: 70px;
     height: 70px;
 }
-.lorem-ipsum {
+.lorem__ipsum {
     font-size: 14px;
     font-weight: 700;
     line-height: 1.14;
@@ -288,14 +290,14 @@ li > .link {
     padding-bottom: 10px;
 }
 
-.lorem-text {
+.lorem__text {
     font-size: 14px;
     line-height: 1.71;
 
     color: #757575;
 }
 
-.lorem-text::first-letter,
+.lorem__text::first-letter,
 .headline2::first-letter,
 .project-name::first-letter,
 .project-type::first-letter {
@@ -315,13 +317,13 @@ li > .link {
     margin: 0;
 }
 
-.work-images {
+.work__list {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
 }
 
-.work-images-1 {
+.work-image {
     position: absolute;
     width: 370px;
     height: 70px;
@@ -333,7 +335,7 @@ li > .link {
     top: 1432px;
 }
 
-.work-images-text {
+.work-image__text {
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 700;
